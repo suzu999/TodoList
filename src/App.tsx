@@ -4,8 +4,7 @@ import TodoListTemplate from './Todo/TodoListTemplate';
 import Form from './Todo/Form';
 
 
-
-function App() {
+const App = () => {
   return (
     <TodoListTemplate form={Form("")}>
       템플릿완성

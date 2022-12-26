@@ -1,24 +1,24 @@
-import React, {  ChangeEventHandler, KeyboardEventHandler, ReactHTMLElement, ReactNode } from "react";
+import React from "react";
 import './Form.css';
 
 
-const onChange = (e:React.ChangeEvent<HTMLInputElement>) => {
-    console.log("test");
-}
-const onCreate = ()=>{}
-const onKeyPress = (k:React.KeyboardEvent<HTMLInputElement>)=>{}
-
-
 const Form = (value: string) => {
-    return (
-      <div className="form">
-        <input value={value} onChange={onChange} onKeyPress={onKeyPress}/>
-        <div className="create-button" onClick={onCreate}>
-          추가
-        </div>
+  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  }
+  const onCreate = () => {
+  }
+  const onKeyPress = (k: React.KeyboardEvent<HTMLInputElement>) => {
+  }
+
+  return (
+    <div className="form">
+      <input value={value} onChange={onChange} onKeyPress={onKeyPress}/>
+      <div className="create-button" onClick={onCreate}>
+        추가
       </div>
-      
-    );
-  };
-  
-  export default Form;
+    </div>
+
+  );
+};
+
+export default Form;
